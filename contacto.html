@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Curso CSS</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+
+    <meta name="theme-color" content="#2091F9">
+
+    <meta name="title" content="Contacto - Curso CSS">
+    <meta name="description"
+        content="Contáctanos para resolver tus dudas sobre nuestros cursos de CSS. Estamos aquí para ayudarte.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aprendecss.com/contacto">
+    <meta property="og:title" content="Contacto - Curso CSS">
+    <meta property="og:description"
+        content="Contáctanos para resolver tus dudas sobre nuestros cursos de CSS. Estamos aquí para ayudarte.">
+    <meta property="og:image" content="https://aprendecss.com/images/css.jpg">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://aprendecss.com/contacto">
+    <meta property="twitter:title" content="Contacto - Curso CSS">
+    <meta property="twitter:description"
+        content="Contáctanos para resolver tus dudas sobre nuestros cursos de CSS. Estamos aquí para ayudarte.">
+    <meta property="twitter:image" content="https://aprendecss.com/images/css.jpg">
+</head>
+
+<body>
+
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <h2 class="nav__title">Curso CSS.</h2>
+            </div>
+
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="index.html" class="nav__links">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a href="acerca-de.html" class="nav__links">Acerca de</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#" class="nav__links">Contacto</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#" class="nav__links">Blog</a>
+                </li>
+
+                <img src="./images/close.svg" class="nav__close">
+            </ul>
+
+            <div class="nav__menu">
+                <img src="./images/menu.svg" class="nav__img">
+            </div>
+        </nav>
+
+        <section class="hero__container container">
+            <h1 class="hero__title">Contáctanos</h1>
+            <p class="hero__paragraph">¿Tienes preguntas sobre nuestros cursos? Estamos aquí para ayudarte. Ponte en contacto con nuestro equipo.</p>
+        </section>
+    </header>
+
+    <main>
+        <!-- Sección de Información de Contacto -->
+        <section class="container about">
+            <h2 class="subtitle">Estamos aquí para ayudarte</h2>
+            <p class="about__paragraph">No dudes en contactarnos si tienes alguna pregunta sobre nuestros cursos, necesitas asistencia técnica o quieres saber más sobre nuestro programa. Nuestro equipo está listo para apoyarte en tu viaje de aprendizaje.</p>
+
+            <div class="about__main">
+                <article class="about__icons">
+                    <img src="./images/email.svg" class="about__icon">
+                    <h3 class="about__title">Email</h3>
+                    <p class="about__paragrah">hola@cursocss.com</p>
+                    <p class="about__paragrah">Respondemos en menos de 24 horas</p>
+                </article>
+
+                <article class="about__icons">
+                    <img src="./images/phone.svg" class="about__icon">
+                    <h3 class="about__title">Teléfono</h3>
+                    <p class="about__paragrah">+1 (555) 123-4567</p>
+                    <p class="about__paragrah">Lunes a Viernes 9am - 6pm</p>
+                </article>
+
+                <article class="about__icons">
+                    <img src="./images/location.svg" class="about__icon">
+                    <h3 class="about__title">Oficina</h3>
+                    <p class="about__paragrah">Calle Desarrollo Web 123</p>
+                    <p class="about__paragrah">Ciudad Digital, DC 28080</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección de Formulario de Contacto -->
+        <section class="knowledge">
+            <div class="knowledge__container container">
+                <div class="knowledege__texts">
+                    <h2 class="subtitle">Envíanos un mensaje</h2>
+                    <p class="knowledge__paragraph">Completa el formulario y nos pondremos en contacto contigo lo antes posible. Todos los campos son obligatorios.</p>
+                    
+                    <form class="contact-form" action="https://formspree.io/f/mknkkrkj" method="POST">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Nombre completo *</label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email *</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Asunto *</label>
+                            <select id="subject" name="subject" class="form-input" required>
+                                <option value="">Selecciona un asunto</option>
+                                <option value="informacion">Información sobre cursos</option>
+                                <option value="soporte">Soporte técnico</option>
+                                <option value="pagos">Problemas con pagos</option>
+                                <option value="empresa">Cursos para empresas</option>
+                                <option value="otros">Otros</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Mensaje *</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="5" required placeholder="Describe tu consulta en detalle..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-checkbox">
+                                <input type="checkbox" name="newsletter" checked>
+                                <span class="checkmark"></span>
+                                Suscribirme al newsletter con tips de CSS
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="cta cta--form">Enviar mensaje</button>
+                    </form>
+                </div>
+
+                <figure class="knowledge__picture">
+                    <img src="./images/contact.svg" class="knowledge__img">
+                </figure>
+            </div>
+        </section>
+
+        <!-- Sección de Preguntas Frecuentes -->
+        <section class="questions container">
+            <h2 class="subtitle">Preguntas frecuentes de contacto</h2>
+
+            <section class="questions__container">
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿Cuánto tardan en responder?
+                            <span class="questions__arrow">
+                                <img src="./images/arrow.svg" class="questions__img">
+                            </span>
+                        </h3>
+
+                        <p class="questions__show">Normalmente respondemos todos los mensajes en menos de 24 horas hábiles. Para consultas urgentes, te recomendamos usar nuestro chat en vivo disponible en horario comercial.</p>
+                    </div>
+                </article>
+
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿Ofrecen soporte técnico?
+                            <span class="questions__arrow">
+                                <img src="./images/arrow.svg" class="questions__img">
+                            </span>
+                        </h3>
+
+                        <p class="questions__show">Sí, ofrecemos soporte técnico gratuito para todos nuestros estudiantes. Puedes contactarnos por cualquier problema técnico relacionado con el acceso a los cursos o el funcionamiento de las plataformas.</p>
+                    </div>
+                </article>
+
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿Puedo solicitar un reembolso?
+                            <span class="questions__arrow">
+                                <img src="./images/arrow.svg" class="questions__img">
+                            </span>
+                        </h3>
+
+                        <p class="questions__show">Ofrecemos garantía de reembolso de 30 días. Si no estás satisfecho con el curso, puedes solicitar un reembolso completo dentro de los primeros 30 días después de la compra.</p>
+                    </div>
+                </article>
+
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿Ofrecen cursos personalizados para empresas?
+                            <span class="questions__arrow">
+                                <img src="./images/arrow.svg" class="questions__img">
+                            </span>
+                        </h3>
+
+                        <p class="questions__show">Sí, desarrollamos programas personalizados para empresas. Contáctanos para discutir tus necesidades específicas y crearemos un plan de formación adaptado a tu equipo.</p>
+                    </div>
+                </article>
+            </section>
+        </section>
+
+        <!-- Sección de Redes Sociales -->
+        <section class="price container">
+            <h2 class="subtitle">Síguenos en redes sociales</h2>
+            <p class="about__paragraph" style="text-align: center; margin-bottom: 40px;">Mantente actualizado con nuestros últimos contenidos, tips de CSS y anuncios importantes.</p>
+
+            <div class="price__table">
+                <div class="price__element">
+                    <div class="social-icon">
+                        <img src="./images/facebook.svg" alt="Facebook">
+                    </div>
+                    <h3 class="price__price">Facebook</h3>
+                    <div class="price__items">
+                        <p class="price__features">Tutoriales en vivo</p>
+                        <p class="price__features">Comunidad activa</p>
+                        <p class="price__features">Q&A semanales</p>
+                    </div>
+                    <a href="#" class="price__cta">Seguir</a>
+                </div>
+
+                <div class="price__element price__element--best">
+                    <div class="social-icon">
+                        <img src="./images/youtube.svg" alt="YouTube">
+                    </div>
+                    <h3 class="price__price">YouTube</h3>
+                    <div class="price__items">
+                        <p class="price__features">Tutoriales gratis</p>
+                        <p class="price__features">Proyectos completos</p>
+                        <p class="price__features">Code-alongs</p>
+                    </div>
+                    <a href="#" class="price__cta">Suscribirse</a>
+                </div>
+
+                <div class="price__element">
+                    <div class="social-icon">
+                        <img src="./images/twitter.svg" alt="Twitter">
+                    </div>
+                    <h3 class="price__price">Twitter</h3>
+                    <div class="price__items">
+                        <p class="price__features">Tips diarios</p>
+                        <p class="price__features">Noticias CSS</p>
+                        <p class="price__features">Eventos web</p>
+                    </div>
+                    <a href="#" class="price__cta">Seguir</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Chat en Vivo -->
+        <section class="testimony" style="background-color: #fff;">
+            <div class="knowledge__container container">
+                <div class="knowledege__texts">
+                    <h2 class="subtitle">Chat en vivo</h2>
+                    <p class="knowledge__paragraph">¿Necesitas ayuda inmediata? Nuestro chat en vivo está disponible para resolver tus dudas rápidamente.</p>
+                    
+                    <div class="chat-info">
+                        <div class="chat-schedule">
+                            <h4>Horario de atención:</h4>
+                            <p>Lunes a Viernes: 9:00 - 18:00</p>
+                            <p>Sábados: 10:00 - 14:00</p>
+                            <p class="chat-timezone">(Horario Este - GMT-5)</p>
+                        </div>
+                        
+                        <div class="chat-status">
+                            <div class="status-indicator online"></div>
+                            <span>Disponible ahora</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="cta cta--chat">Iniciar chat</a>
+                </div>
+
+                <figure class="knowledge__picture">
+                    <img src="./images/chat.svg" class="knowledge__img">
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <section class="footer__container container">
+            <nav class="nav nav--footer">
+                <h2 class="footer__title">Curso CSS.</h2>
+
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav__items">
+                        <a href="index.html" class="nav__links">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="acerca-de.html" class="nav__links">Acerca de</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Contacto</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Blog</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <form class="footer__form" action="https://formspree.io/f/mknkkrkj" method="POST">
+                <h2 class="footer__newsletter">Suscribete a la newsletter</h2>
+                <div class="footer__inputs">
+                    <input type="email" placeholder="Email:" class="footer__input" name="_replyto">
+                    <input type="submit" value="Registrate" class="footer__submit">
+                </div>
+            </form>
+        </section>
+
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="#" class="footer__icons"><img src="./images/facebook.svg" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="./images/twitter.svg" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="./images/youtube.svg" class="footer__img"></a>
+            </div>
+
+            <h3 class="footer__copyright">Derechos reservados &copy; Jordan Alexander</h3>
+        </section>
+    </footer>
+
+    <!-- Botón de WhatsApp Flotante -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/15551234567" target="_blank" class="whatsapp-link">
+            <img src="./images/whatsapp.svg" alt="WhatsApp">
+        </a>
+    </div>
+
+    <script src="./js/slider.js"></script>
+    <script src="./js/questions.js"></script>
+    <script src="./js/menu.js"></script>
+</body>
+
+</html>

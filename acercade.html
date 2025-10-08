@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de - Curso CSS</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+
+    <meta name="theme-color" content="#2091F9">
+
+    <meta name="title" content="Acerca de - Curso CSS">
+    <meta name="description"
+        content="Conoce más sobre nuestro curso de CSS, nuestro equipo y nuestra metodología de enseñanza.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aprendecss.com/acerca-de">
+    <meta property="og:title" content="Acerca de - Curso CSS">
+    <meta property="og:description"
+        content="Conoce más sobre nuestro curso de CSS, nuestro equipo y nuestra metodología de enseñanza.">
+    <meta property="og:image" content="https://aprendecss.com/images/css.jpg">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://aprendecss.com/acerca-de">
+    <meta property="twitter:title" content="Acerca de - Curso CSS">
+    <meta property="twitter:description"
+        content="Conoce más sobre nuestro curso de CSS, nuestro equipo y nuestra metodología de enseñanza.">
+    <meta property="twitter:image" content="https://aprendecss.com/images/css.jpg">
+</head>
+
+<body>
+
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <h2 class="nav__title">Curso CSS.</h2>
+            </div>
+
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="index.html" class="nav__links">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#" class="nav__links">Acerca de</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#" class="nav__links">Contacto</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#" class="nav__links">Blog</a>
+                </li>
+
+                <img src="./images/close.svg" class="nav__close">
+            </ul>
+
+            <div class="nav__menu">
+                <img src="./images/menu.svg" class="nav__img">
+            </div>
+        </nav>
+
+        <section class="hero__container container">
+            <h1 class="hero__title">Sobre Nosotros</h1>
+            <p class="hero__paragraph">Conoce más sobre nuestra misión, nuestro equipo y por qué somos la mejor opción para aprender CSS desde cero.</p>
+        </section>
+    </header>
+
+    <main>
+        <!-- Sección de Misión y Visión -->
+        <section class="container about">
+            <h2 class="subtitle">Nuestra Misión</h2>
+            <p class="about__paragraph">En Curso CSS, nos dedicamos a democratizar el conocimiento del diseño web, haciendo que el aprendizaje de CSS sea accesible, práctico y divertido para todos. Creemos que cualquiera puede dominar esta tecnología fundamental con la guía adecuada.</p>
+
+            <div class="about__main">
+                <article class="about__icons">
+                    <img src="./images/target.svg" class="about__icon">
+                    <h3 class="about__title">Enfoque Práctico</h3>
+                    <p class="about__paragrah">Aprenderás haciendo proyectos reales desde el primer día, no solo teoría.</p>
+                </article>
+
+                <article class="about__icons">
+                    <img src="./images/community.svg" class="about__icon">
+                    <h3 class="about__title">Comunidad Activa</h3>
+                    <p class="about__paragrah">Forma parte de una comunidad de más de 10,000 estudiantes que se apoyan mutuamente.</p>
+                </article>
+
+                <article class="about__icons">
+                    <img src="./images/update.svg" class="about__icon">
+                    <h3 class="about__title">Contenido Actualizado</h3>
+                    <p class="about__paragrah">Nuestro contenido se actualiza constantemente con las últimas tendencias y mejores prácticas.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección del Equipo -->
+        <section class="testimony">
+            <div class="testimony__container container">
+                <h2 class="subtitle" style="text-align: center; margin-bottom: 40px; grid-column: 1/-1;">Nuestro Equipo</h2>
+
+                <img src="./images/leftarrow.svg" class="testimony__arrow" id="before">
+
+                <section class="testimony__body testimony__body--show" data-id="1">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Jordan Alexander, <span class="testimony__course">Fundador & Instructor Principal</span></h2>
+                        <p class="testimony__review">Con más de 8 años de experiencia en desarrollo frontend, Jordan ha trabajado con empresas como Google, Airbnb y Netflix. Su pasión por enseñar lo llevó a crear Curso CSS para compartir su conocimiento con la comunidad hispanohablante.</p>
+                    </div>
+
+                    <figure class="testimony__picture">
+                        <img src="./images/face.jpg" class="testimony__img">
+                    </figure>
+                </section>
+
+                <section class="testimony__body" data-id="2">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">María González, <span class="testimony__course">Diseñadora UI/UX</span></h2>
+                        <p class="testimony__review">María se especializa en crear experiencias de usuario excepcionales. Con una maestría en Diseño de Interacción, asegura que nuestros cursos no solo enseñen código, sino también principios de diseño fundamentales.</p>
+                    </div>
+
+                    <figure class="testimony__picture">
+                        <img src="./images/face2.jpg" class="testimony__img">
+                    </figure>
+                </section>
+
+                <section class="testimony__body" data-id="3">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Carlos Rodríguez, <span class="testimony__course">Desarrollador Senior</span></h2>
+                        <p class="testimony__review">Carlos aporta más de 6 años de experiencia en desarrollo web. Es especialista en accesibilidad web y performance, asegurando que nuestros estudiantes aprendan las mejores prácticas de la industria.</p>
+                    </div>
+
+                    <figure class="testimony__picture">
+                        <img src="./images/face3.jpg" class="testimony__img">
+                    </figure>
+                </section>
+
+                <img src="./images/rightarrow.svg" class="testimony__arrow" id="next">
+            </div>
+        </section>
+
+        <!-- Sección de Estadísticas -->
+        <section class="knowledge">
+            <div class="knowledge__container container">
+                <div class="knowledege__texts">
+                    <h2 class="subtitle">Nuestro Impacto</h2>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3 class="stat__number">15,000+</h3>
+                            <p class="stat__description">Estudiantes graduados</p>
+                        </div>
+                        <div class="stat">
+                            <h3 class="stat__number">98%</h3>
+                            <p class="stat__description">Tasa de satisfacción</p>
+                        </div>
+                        <div class="stat">
+                            <h3 class="stat__number">50+</h3>
+                            <p class="stat__description">Países alcanzados</p>
+                        </div>
+                    </div>
+                    <p class="knowledge__paragraph">Nuestros estudiantes han conseguido trabajos en empresas como Microsoft, Amazon, Facebook y muchas startups exitosas. El 85% de nuestros graduados reportan una mejora significativa en sus oportunidades laborales.</p>
+                </div>
+
+                <figure class="knowledge__picture">
+                    <img src="./images/team-work.svg" class="knowledge__img">
+                </figure>
+            </div>
+        </section>
+
+        <!-- Sección de Metodología -->
+        <section class="price container">
+            <h2 class="subtitle">Nuestra Metodología</h2>
+
+            <div class="price__table">
+                <div class="price__element">
+                    <p class="price__name">Aprende Haciendo</p>
+                    <h3 class="price__price">Práctica</h3>
+
+                    <div class="price__items">
+                        <p class="price__features">Proyectos reales</p>
+                        <p class="price__features">Ejercicios interactivos</p>
+                        <p class="price__features">Retos semanales</p>
+                    </div>
+                </div>
+
+                <div class="price__element price__element--best">
+                    <p class="price__name">Soporte Continuo</p>
+                    <h3 class="price__price">Comunidad</h3>
+
+                    <div class="price__items">
+                        <p class="price__features">Foros activos</p>
+                        <p class="price__features">Sesiones en vivo</p>
+                        <p class="price__features">Feedback personalizado</p>
+                    </div>
+                </div>
+
+                <div class="price__element">
+                    <p class="price__name">A Tu Ritmo</p>
+                    <h3 class="price__price">Flexibilidad</h3>
+
+                    <div class="price__items">
+                        <p class="price__features">Acceso 24/7</p>
+                        <p class="price__features">Contenido descargable</p>
+                        <p class="price__features">Actualizaciones gratuitas</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Valores -->
+        <section class="questions container">
+            <h2 class="subtitle">Nuestros Valores</h2>
+
+            <section class="questions__container">
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">Calidad sobre Cantidad
+                            <span class="questions__arrow">
+                                <img src="./images/arrow.svg" class="questions__img">
+                            </span>
+                        </h3>
+
+                        <p class="questions__show">Priorizamos contenido bien estructurado y explicado sobre la cantidad de horas. Cada lección está cuidadosamente diseñada para maximizar tu aprendizaje en el menor tiempo posible.</p>
+                    </div>
+                </article>
+
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">Accesibilidad para Todos
+                            <span class="questions__arrow">
+                                <img src="./images/arrow.svg" class="questions__img">
+                            </span>
+                        </h3>
+
+                        <p class="questions__show">Creemos que el conocimiento debe ser accesible para todos, independientemente de su situación económica o ubicación geográfica. Por eso ofrecemos opciones gratuitas y becas para quienes lo necesiten.</p>
+                    </div>
+                </article>
+
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">Aprendizaje Continuo
+                            <span class="questions__arrow">
+                                <img src="./images/arrow.svg" class="questions__img">
+                            </span>
+                        </h3>
+
+                        <p class="questions__show">El mundo del desarrollo web cambia constantemente, y nosotros también. Actualizamos regularmente nuestro contenido y fomentamos una mentalidad de aprendizaje continuo entre nuestros estudiantes.</p>
+                    </div>
+                </article>
+            </section>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <section class="footer__container container">
+            <nav class="nav nav--footer">
+                <h2 class="footer__title">Curso CSS.</h2>
+
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav__items">
+                        <a href="index.html" class="nav__links">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Acerca de</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Contacto</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Blog</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <form class="footer__form" action="https://formspree.io/f/mknkkrkj" method="POST">
+                <h2 class="footer__newsletter">Suscribete a la newsletter</h2>
+                <div class="footer__inputs">
+                    <input type="email" placeholder="Email:" class="footer__input" name="_replyto">
+                    <input type="submit" value="Registrate" class="footer__submit">
+                </div>
+            </form>
+        </section>
+
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="#" class="footer__icons"><img src="./images/facebook.svg" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="./images/twitter.svg" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="./images/youtube.svg" class="footer__img"></a>
+            </div>
+
+            <h3 class="footer__copyright">Derechos reservados &copy; Jordan Alexander</h3>
+        </section>
+    </footer>
+
+    <script src="./js/slider.js"></script>
+    <script src="./js/questions.js"></script>
+    <script src="./js/menu.js"></script>
+</body>
+
+</html>
